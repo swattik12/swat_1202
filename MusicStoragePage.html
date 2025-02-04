@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Storage Page</title>
+    <style>
+        body {
+            /* background-color: rgb(238, 230, 219); */
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+            background-color: rgb(190, 208, 228);
+            display: flex;
+            align-items: center;
+             
+        }
+
+        li {
+            padding: 0 15px;
+            
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            color: white;
+            display: inline-block;
+            color: black;
+        }
+
+        li a:hover {
+            background-color: blanchedalmond;
+            color: black;
+            font-size: large;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 60%;
+        }
+        h1{
+            text-align: center;
+        }
+        #main,#secondary,#third,#fourth{
+            display: flex; 
+            justify-content: center;
+            gap: 30px; 
+            flex-wrap: wrap;
+        }
+        .song, .song2, .song3, .song4 {
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .song:hover, .song2:hover, .song3:hover, .song4:hover {
+            transform: scale(1.05);
+        }
+        
+        img:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+       }
+
+        .img_circle{
+            border-radius: 50%;
+             object-fit: cover;
+        }
+
+        footer{
+            text-align: center;
+            background-color:  aqua;
+            color:  white;
+            padding:20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Music</a></li>
+            <li class="search-bar">
+                <input type="text" placeholder="Search Music">
+            </li>
+            <li><a href="#">Get Premium</a></li>
+            <li><a href="#">Login/Sign up</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Welcome to Swattik's Music Page</h1>
+        <h2>Trending Songs</h2>
+     <div id="main">
+        <div class="song">
+            <img src="download (1).jpg" alt="Red" height="155">
+            <p>Rang</p>
+            <audio controls>
+                <source src="RED - Kshama 2024 128KBPS.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="song">
+            <img src="download (2).jpg" alt="Millionaire" height="150">
+            <p>Millionaire</p>
+            <audio controls>
+                <source src="Millionaire Glory 128 Kbps.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="song">
+            <img src="download (3).jpg" alt="I Guess" height="150">
+            <p>I Guess</p>
+            <audio controls>
+                <source src="I Guess Krsna 128 Kbps.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class = "song">
+            <img src="download (4).jpg" alt="Baawe" height="150">
+            <p>Baawe</p>
+            <audio controls>
+                <source src="Baawe Hard Drive Vol. 2 128 Kbps.mp3" type="audio/mp3">
+            </audio>
+        </div> 
+    </div>
+    
+
+    <div> 
+        
+       <h2>Recently Played</h2>
+       <div id="secondary">
+       <div class="song2">
+            <img src="download (5).jpg" alt="All Black">
+            <p>All Black</p>
+            <audio controls>
+                 <source src="All Black Raftaar 128 Kbps.mp3">
+             </audio>
+       </div>
+
+       <div class="song2">
+            <img src="download (6).jpg" alt="joota japani">
+            <p>Joota Japani</p>
+            <audio controls>
+                <source src="Joota-Japani(PagalNew.Com.Se).mp3">
+            </audio>
+       </div>
+
+       <div class="song2">
+            <img src="download (7).jpg" alt="woh raat">
+            <p>Woh Raat</p>
+            <audio controls>
+                <source src="Woh Raat Raftaar 128 Kbps.mp3">
+            </audio>
+       </div>
+
+       <div class="song2">
+            <img src="download (8).jpg" alt="tripleog" height="170">
+            <p>Triple OG</p>
+            <audio controls>
+                <source src="Triple-OG(PagalNew.Com.Se).mp3">
+            </audio>
+       </div>
+    </div>
+
+    <div>
+        <h2>Poular Artists</h2>
+        <div id = "third">
+            <div class="song3">
+                <img  class= "img_circle" src="raftaar.jpg" alt="Raftaar">
+                <p>Raftaar</p>
+            </div>
+
+            <div class="song3">
+                <img class= "img_circle" src="kr$na.jpg" alt="Kr$na">
+                <p>KR$NA</p>
+            </div>
+
+            <div class="song3">
+                <img class= "img_circle" src="divine.jpg" alt="Divine">
+                <p>Divine</p>
+            </div>
+
+            <div class="song3">
+                <img class= "img_circle" src="ikka.jpg" alt="ikka">
+                <p>Ikka</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <h2>Albums and Signals</h2>
+        <div id="fourth">
+            <div class="song4">
+                <img src="download (9).jpg" alt="HDV2">
+                <audio src="">
+
+                </audio>
+                <p>Hard Drive Vol-2</p>
+                <p>Raftaar</p>
+            </div>
+
+            <div class="song4">
+                <img src="download (10).jpg" alt="baadshah">
+                <audio src="">
+
+                </audio>
+                <p>Badshah</p>
+                <p>Emiway Bantai</p>
+            </div>
+
+            <div class="song4">
+                <img src="download (11).jpg" alt="Glory">
+                <audio src="">
+
+                </audio>
+                <p>Glory</p>
+                <p>Yo Yo Honey Singh</p>
+            </div>
+
+            <div class="song4">
+                <img src="download (12).jpg" alt="BIBTT">
+                <audio src="">
+
+                </audio>
+                <p>Blood is better than Tears</p>
+                <p>Ikka</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div>
+           <h3>Thank You for Visiting My Music Page </h3>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+ 
