@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karshaka Suhruthu</title>
+    <link rel="stylesheet" href="chatbot.css" />
+    <link rel="Website Icon" href="./Images/Logo.jpg" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./Images/Logo.jpg" alt="Logo" />
+        <h1>Karshaka Suhruthu</h1>
+      </div>
+      <div>
+        <button onclick="malyalam()">🌐 മലയാളം</button>
+        <button>Logout</button>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <div class="card ai-assistant">
+        <div>
+          <h2>💬 AI Assistant</h2>
+          <div class="chat-box">
+            Hello! I'm your AI farming assistant. Ask me about pest control,
+            weather advice, crop care, or government schemes.
+          </div>
+        </div>
+        <div>
+          <div class="upload">Upload crop image for pest/disease detection</div>
+          <div class="input-area">
+            <input type="text" placeholder="Ask your farming question..." />
+            <button>➤</button>
+          </div>
+          <div class="extra-buttons">
+            <button id="voiceBtn">🎤 Voice Input</button>
+            <button id="photoBtn">📷 Photo</button>
+          </div>
+          <div id="capturedMedia"></div>
+        </div>
+      </div>
+
+      <div class="card advice">
+        <h2>💡 Personalized Advice</h2>
+        <h3>Today's Advice</h3>
+
+        <div class="alert">
+          <strong>Weather Alert</strong>
+          <span class="badge urgent">Urgent</span>
+          <p>
+            Heavy rainfall expected in 2 days. Prepare drainage for rice fields.
+          </p>
+          <button>Check drainage ⬇</button>
+        </div>
+
+        <div class="opportunity">
+          <strong>Market Price Alert</strong>
+          <span class="badge success">Opportunity</span>
+          <p>Coconut prices are 15% higher this week. Good time to sell.</p>
+          <button>View markets ⬇</button>
+        </div>
+
+        <button class="view-all">View All Advice</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <h2>Weather Forecast</h2>
+          <div id="weather">Loading weather...</div>
+        </div>
+
+        <div class="card">
+          <h2>Current Crops</h2>
+          <div>
+            <select id="cropSelect">
+              <option value="">🌱 Select crop to add</option>
+              <option>🌾 Rice</option>
+              <option>🥥 Coconut</option>
+              <option>🌿 Wheat</option>
+              <option>🌽 Maize</option>
+              <option>🍬 Sugarcane</option>
+            </select>
+            <button class="add-btn" onclick="addCrop()">+</button>
+          </div>
+
+          <div id="addedCrops" class="crop-list">No crops added yet</div>
+        </div>
+
+        <div class="card">
+          <h2>Government Schemes</h2>
+          <div class="scheme">
+            <b>PM-KISAN Scheme</b><span>Active</span>
+            <p>Direct income support to farmers</p>
+            <small>₹6,000/year • Deadline: 31-10-2025</small>
+            <button>View Details</button>
+          </div>
+          <div class="scheme">
+            <b>Kisan Credit Card</b><span>Active</span>
+            <p>Low-interest agricultural loans</p>
+            <small>Up to ₹3 Lakh • Deadline: 31-12-2025</small>
+            <button>View Details</button>
+          </div>
+          <button style="width: 100%; margin-top: 10px" class="add-btn">
+            View All Schemes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Karshaka Suhruthu. All rights reserved.</footer>
+
+    <script>
+      const apiKey = "24d2ff1f208067958e8e4ab1dbf30bf1";
+      const weatherDiv = document.getElementById("weather");
+      const addedCrops = document.getElementById("addedCrops");
+      let crops = [];
+
+      async function fetchWeather(lat, lon) {
+        try {
+          const res = await fetch(
+            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`
+          );
+          const data = await res.json();
+
+          if (!data.list) {
+            weatherDiv.innerHTML = "Weather data unavailable.";
+            return;
+          }
+
+          const forecast = data.list.filter((_, i) => i % 8 === 0).slice(0, 6);
+
+          weatherDiv.innerHTML = forecast
+            .map(
+              (f, i) => `
+            <div class="forecast-item">
+              <div><b>${i === 0 ? "Today" : "Day " + i}</b></div>
+              <img src="https://openweathermap.org/img/wn/${
+                f.weather[0].icon
+              }@2x.png" width="50"/>
+              <div style="font-size:20px;">${Math.round(f.main.temp)}°C</div>
+              <div>${f.weather[0].main}</div>
+              <small>💧${f.main.humidity}% • 🍃${Math.round(
+                f.wind.speed * 3.6
+              )} km/h</small>
+            </div>`
+            )
+            .join("");
+        } catch (e) {
+          weatherDiv.innerHTML = "Error fetching weather.";
+          console.error(e);
+        }
+      }
+
+      function initWeather() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (pos) => {
+              fetchWeather(pos.coords.latitude, pos.coords.longitude);
+            },
+            (err) => {
+              console.warn("Geolocation error", err);
+              fetchWeather(9.9312, 76.2673); // fallback: Kochi
+            }
+          );
+        } else {
+          fetchWeather(9.9312, 76.2673);
+        }
+      }
+
+      initWeather();
+
+      function renderCrops() {
+        if (crops.length === 0) {
+          addedCrops.innerHTML = "No crops added yet";
+          return;
+        }
+        addedCrops.innerHTML = crops.map((c) => `<span>${c}</span>`).join(" ");
+      }
+
+      function addCrop() {
+        const cropSelect = document.getElementById("cropSelect");
+        const selectedCrop = cropSelect.value;
+
+        if (selectedCrop && !crops.includes(selectedCrop)) {
+          crops.push(selectedCrop);
+          renderCrops();
+        }
+        cropSelect.value = "";
+      }
+
+      function malyalam() {
+        window.location.href = "malyalam.html";
+      }
+
+       
+      const voiceBtn = document.getElementById("voiceBtn");
+
+      voiceBtn.addEventListener("click", () => {
+        if (
+          !("webkitSpeechRecognition" in window) &&
+          !("SpeechRecognition" in window)
+        ) {
+          alert("Your browser does not support voice recognition.");
+          return;
+        }
+
+        const SpeechRecognition =
+          window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition = new SpeechRecognition();
+        recognition.lang = "en-US";
+        recognition.interimResults = false;
+
+        recognition.onstart = () => console.log("Voice recognition started...");
+        recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          document.querySelector(
+            ".chat-box"
+          ).innerHTML += `<div>User: ${transcript}</div>`;
+        };
+
+        recognition.onerror = (event) =>
+          console.error("Voice recognition error:", event.error);
+        recognition.start();
+      });
+
+    
+      const photoBtn = document.getElementById("photoBtn");
+      const capturedMediaDiv = document.getElementById("capturedMedia");
+
+      photoBtn.addEventListener("click", async () => {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: true,
+          });
+          const video = document.createElement("video");
+          video.srcObject = stream;
+          video.play();
+          capturedMediaDiv.innerHTML = "";
+          capturedMediaDiv.appendChild(video);
+
+          // Take snapshot button
+          const snapBtn = document.createElement("button");
+          snapBtn.textContent = "📸 Capture Photo";
+          capturedMediaDiv.appendChild(snapBtn);
+
+          snapBtn.addEventListener("click", () => {
+            const canvas = document.createElement("canvas");
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Show captured image
+            const img = document.createElement("img");
+            img.src = canvas.toDataURL("image/png");
+            capturedMediaDiv.innerHTML = "";
+            capturedMediaDiv.appendChild(img);
+
+            // Stop camera
+            stream.getTracks().forEach((track) => track.stop());
+          });
+        } catch (err) {
+          console.error("Camera access error:", err);
+          alert("Unable to access camera.");
+        }
+      });
+    </script>
+  </body>
+</html>

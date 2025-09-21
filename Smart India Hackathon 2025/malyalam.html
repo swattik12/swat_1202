@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>എഐ സഹായി</title>
+    <link rel="stylesheet" href="chatbot.css" />
+    <link rel="Website Icon" href="./Images/Logo.jpg" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./Images/Logo.jpg" alt="Logo" />
+        <h1>കർഷക സുഹൃത്ത്</h1>
+      </div>
+      <div>
+        <button onclick="english()">🌐 English</button>
+        <button>ലോഗ്ഔട്ട്</button>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <div class="card ai-assistant">
+        <div>
+          <h2>💬 എഐ സഹായി</h2>
+          <div class="chat-box">
+            ഹലോ! ഞാൻ നിങ്ങളുടെ എഐ കാർഷിക സഹായി. കീടനിയന്ത്രണം, കാലാവസ്ഥ ഉപദേശം,
+            വിള പരിപാലനം, സർക്കാർ പദ്ധതികൾ എന്നിവയെക്കുറിച്ച് ചോദിക്കാം.
+          </div>
+        </div>
+        <div>
+          <div class="upload">
+            കീട/രോഗം കണ്ടെത്താൻ വിളയുടെ ചിത്രം അപ്‌ലോഡ് ചെയ്യുക
+          </div>
+          <div class="input-area">
+            <input
+              type="text"
+              placeholder="നിങ്ങളുടെ കാർഷിക ചോദ്യം ചോദിക്കൂ..."
+            />
+            <button>➤</button>
+          </div>
+          <div class="extra-buttons">
+            <button id="voiceBtn">🎤 ശബ്ദ ഇൻപുട്ട്</button>
+            <button id="photoBtn">📷 ഫോട്ടോ</button>
+          </div>
+          <div id="capturedMedia"></div>
+        </div>
+      </div>
+
+      <div class="card advice">
+        <h2>💡 വ്യക്തിഗത ഉപദേശം</h2>
+        <h3>ഇന്നത്തെ ഉപദേശം</h3>
+
+        <div class="alert">
+          <strong>കാലാവസ്ഥ മുന്നറിയിപ്പ്</strong>
+          <span class="badge urgent">തൽക്ഷണം</span>
+          <p>
+            2 ദിവസത്തിനുള്ളിൽ ശക്തമായ മഴ പ്രതീക്ഷിക്കുന്നു. നെൽപ്പാടങ്ങൾക്കായി
+            ഡ്രെയിനേജ് ഒരുക്കുക.
+          </p>
+          <button>ഡ്രെയിനേജ് പരിശോധിക്കുക ⬇</button>
+        </div>
+
+        <div class="opportunity">
+          <strong>വിപണി വില മുന്നറിയിപ്പ്</strong>
+          <span class="badge success">അവസരം</span>
+          <p>ഈ ആഴ്ച തേങ്ങയുടെ വില 15% കൂടുതലാണ്. വിറ്റഴിക്കാൻ നല്ല സമയം.</p>
+          <button>വിപണികൾ കാണുക ⬇</button>
+        </div>
+
+        <button class="view-all">എല്ലാ ഉപദേശങ്ങളും കാണുക</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <h2>കാലാവസ്ഥ പ്രവചനം</h2>
+          <div id="weather">കാലാവസ്ഥ ലോഡ് ചെയ്യുന്നു...</div>
+        </div>
+
+        <div class="card">
+          <h2>നിലവിലെ വിളകൾ</h2>
+          <div>
+            <select id="cropSelect">
+              <option value="">🌱 ചേർക്കാൻ വിള തിരഞ്ഞെടുക്കുക</option>
+              <option>🌾 അരി</option>
+              <option>🥥 തേങ്ങ</option>
+              <option>🌿 ഗോതമ്പ്</option>
+              <option>🌽 ചോളം</option>
+              <option>🍬 കരിമ്പ്</option>
+            </select>
+            <button class="add-btn" onclick="addCrop()">+</button>
+          </div>
+
+          <div id="addedCrops" class="crop-list">
+            വിലകൾ ഒന്നും ചേർത്തിട്ടില്ല
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>സർക്കാർ പദ്ധതികൾ</h2>
+          <div class="scheme">
+            <b>പി.എം-കിസാൻ പദ്ധതി</b><span>സജീവം</span>
+            <p>കർഷകർക്ക് നേരിട്ടുള്ള വരുമാന സഹായം</p>
+            <small>₹6,000/വർഷം • അവസാന തീയതി: 31-10-2025</small>
+            <button>വിശദാംശങ്ങൾ കാണുക</button>
+          </div>
+          <div class="scheme">
+            <b>കിസാൻ ക്രെഡിറ്റ് കാർഡ്</b><span>സജീവം</span>
+            <p>കുറഞ്ഞ പലിശയുള്ള കാർഷിക വായ്പകൾ</p>
+            <small>₹3 ലക്ഷം വരെ • അവസാന തീയതി: 31-12-2025</small>
+            <button>വിശദാംശങ്ങൾ കാണുക</button>
+          </div>
+          <button style="width: 100%; margin-top: 10px" class="add-btn">
+            എല്ലാ പദ്ധതികളും കാണുക
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 കർഷക സുഹൃത്ത്. എല്ലാ അവകാശങ്ങളും സംരക്ഷിച്ചിരിക്കുന്നു.
+    </footer>
+
+    <script>
+      const apiKey = "24d2ff1f208067958e8e4ab1dbf30bf1";
+      const weatherDiv = document.getElementById("weather");
+      const addedCrops = document.getElementById("addedCrops");
+      let crops = [];
+
+      // Render crops in Malayalam
+      function renderCrops() {
+        if (crops.length === 0) {
+          addedCrops.innerHTML = "ഇതുവരെ വിളകൾ ചേർത്തിട്ടില്ല";
+          return;
+        }
+        addedCrops.innerHTML = crops.map((c) => `<span>${c}</span>`).join(" ");
+      }
+
+      function addCrop() {
+        const cropSelect = document.getElementById("cropSelect");
+        const selectedCrop = cropSelect.value;
+
+        if (selectedCrop && !crops.includes(selectedCrop)) {
+          crops.push(selectedCrop);
+          renderCrops();
+        }
+        cropSelect.value = "";
+      }
+      async function fetchWeather(lat, lon) {
+        try {
+          const res = await fetch(
+            `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`
+          );
+          const data = await res.json();
+
+          if (!data.list) {
+            weatherDiv.innerHTML = "കാലാവസ്ഥ ലഭ്യമല്ല.";
+            return;
+          }
+
+          // Pick 1 forecast per day (every 8 entries = 24 hours)
+          const forecast = data.list.filter((_, i) => i % 8 === 0).slice(0, 4);
+
+          weatherDiv.innerHTML = forecast
+            .map(
+              (f, i) => `
+      <div class="forecast-item">
+        <div><b>${i === 0 ? "ഇന്ന്" : "ദിവസം " + i}</b></div>
+        <img src="https://openweathermap.org/img/wn/${
+          f.weather[0].icon
+        }@2x.png" width="50"/>
+        <div style="font-size:20px;">${Math.round(f.main.temp)}°C</div>
+        <div>${f.weather[0].main}</div>
+        <small>💧${f.main.humidity}% • 🍃${Math.round(
+                f.wind.speed * 3.6
+              )} km/h</small>
+      </div>`
+            )
+            .join("");
+        } catch (e) {
+          weatherDiv.innerHTML = "കാലാവസ്ഥയിൽ പിഴവ് സംഭവിച്ചു.";
+          console.error(e);
+        }
+      }
+
+      function initWeather() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (pos) => {
+              fetchWeather(pos.coords.latitude, pos.coords.longitude);
+            },
+            (err) => {
+              console.warn("Geolocation error", err);
+              fetchWeather(9.9312, 76.2673); // fallback: Kochi
+            }
+          );
+        } else {
+          fetchWeather(9.9312, 76.2673);
+        }
+      }
+
+      // Language switch
+      function malyalam() {
+        window.location.href = "malyalam.html";
+      }
+
+      renderCrops();
+      initWeather();
+
+      // Voice input in Malayalam
+      const voiceBtn = document.getElementById("voiceBtn");
+      voiceBtn.addEventListener("click", () => {
+        if (
+          !("webkitSpeechRecognition" in window) &&
+          !("SpeechRecognition" in window)
+        ) {
+          alert("നിങ്ങളുടെ ബ്രൗസർ ശബ്ദ തിരിച്ചറിയൽ പിന്തുണയ്ക്കുന്നില്ല.");
+          return;
+        }
+
+        const SpeechRecognition =
+          window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition = new SpeechRecognition();
+        recognition.lang = "ml-IN"; // Malayalam
+        recognition.interimResults = false;
+
+        recognition.onstart = () =>
+          console.log("ശബ്ദ തിരിച്ചറിയൽ ആരംഭിച്ചു...");
+        recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          document.querySelector(
+            ".chat-box"
+          ).innerHTML += `<div>ഉപയോക്താവ്: ${transcript}</div>`;
+        };
+
+        recognition.onerror = (event) =>
+          console.error("ശബ്ദ തിരിച്ചറിയൽ പിഴവ്:", event.error);
+        recognition.start();
+      });
+
+      // Photo capture in Malayalam
+      const photoBtn = document.getElementById("photoBtn");
+      const capturedMediaDiv = document.getElementById("capturedMedia");
+
+      photoBtn.addEventListener("click", async () => {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: true,
+          });
+          const video = document.createElement("video");
+          video.srcObject = stream;
+          video.play();
+          capturedMediaDiv.innerHTML = "";
+          capturedMediaDiv.appendChild(video);
+
+          // Snapshot button
+          const snapBtn = document.createElement("button");
+          snapBtn.textContent = "📸 ഫോട്ടോ പിടിക്കുക";
+          capturedMediaDiv.appendChild(snapBtn);
+
+          snapBtn.addEventListener("click", () => {
+            const canvas = document.createElement("canvas");
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            const img = document.createElement("img");
+            img.src = canvas.toDataURL("image/png");
+            capturedMediaDiv.innerHTML = "";
+            capturedMediaDiv.appendChild(img);
+
+            // Stop camera
+            stream.getTracks().forEach((track) => track.stop());
+          });
+        } catch (err) {
+          console.error("ക്യാമറ ആക്‌സസ് പിഴവ്:", err);
+          alert("ക്യാമറയ്ക്ക് ആക്‌സസ് സാധ്യമല്ല.");
+        }
+      });
+
+      function english() {
+        window.location.href = "chatbot.html";
+      }
+    </script>
+  </body>
+</html>

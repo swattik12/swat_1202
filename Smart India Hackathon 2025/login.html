@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karshaka Suhruthu - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("./Images/farmland.jpg") no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+    .form-box h2 {
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+    .form-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+    .form-box button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      background: #2e7d32;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .form-box button:hover {
+      background: #388e3c;
+    }
+    .form-box p {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .form-box a {
+      color: #2e7d32;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #forgot-box {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="Website Icon" href="./Images/Logo.jpg" />
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Farmer Login</h2>
+    <form id="loginForm" onsubmit="openChatbot(event)">
+      <input type="text" placeholder="📱 Phone Number" required>
+      <input type="password" placeholder="🔑 Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <p><a id="forgot-link">Forgot Password?</a></p>
+
+ 
+    <div id="forgot-box">
+      <form id="forgotForm">
+        <input type="email" id="email" placeholder="📧 Enter your email" required>
+        <button type="submit">Send Password</button>
+      </form>
+    </div>
+
+    <p>New farmer? <a href="register.html">Register here</a></p>
+  </div>
+
+  <script>
+    const forgotLink = document.getElementById("forgot-link");
+    const forgotBox = document.getElementById("forgot-box");
+    const forgotForm = document.getElementById("forgotForm");
+  
+    forgotLink.addEventListener("click", () => {
+      forgotBox.style.display = "block";
+    });
+
+    forgotForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      alert("Password reset link sent to: " + email);
+    });
+
+    function openChatbot(event) {
+      event.preventDefault();
+      window.location.href = "chatbot.html";  
+    }
+  </script>
+
+</body>
+</html>
