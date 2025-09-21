@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Krishi Officer</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #e6f7ec, #ffffff);
+        margin: 0;
+        padding: 0;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #7cda81;
+        color: white;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      header small {
+        font-size: 12px;
+        opacity: 0.9;
+      }
+
+      header button {
+        background: white;
+        color: #2e7d32;
+        border: none;
+        padding: 6px 12px;
+        margin-left: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      header button:hover {
+        background: #f0f0f0;
+      }
+
+      .container {
+        padding: 30px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .card h3 {
+        font-weight: 400;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        margin-top: 0;
+        color: #2e7d32;
+        font-size: 20px;
+      }
+
+      .forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .forecast-item {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 12px;
+        text-align: center;
+        background: #f9fff9;
+      }
+
+      .forecast-item img {
+        margin: 5px 0;
+      }
+
+      .forecast-item div {
+        margin: 3px 0;
+      }
+
+      .crop-list span {
+        display: block;
+        background: #c8e6c9;
+        margin: 6px 0;
+        padding: 8px 12px;
+        border-radius: 12px;
+        font-size: 14px;
+        width: fit-content;
+      }
+
+      select,
+      button.add-btn {
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-top: 8px;
+        font-size: 14px;
+      }
+
+      button.add-btn {
+        width: 50px;
+        height: 40px;
+        background: #2e7d32;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button.add-btn:hover {
+        background: #256028;
+      }
+
+      .scheme {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background: #f9fff9;
+      }
+
+      .scheme b {
+        color: #1b5e20;
+      }
+
+      .scheme span {
+        background: #a5d6a7;
+        padding: 2px 8px;
+        border-radius: 8px;
+        font-size: 12px;
+        margin-left: 6px;
+      }
+
+      .scheme small {
+        display: block;
+        margin-top: 5px;
+        color: #555;
+      }
+
+      .scheme button {
+        margin-top: 10px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: none;
+        background: #2e7d32;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .scheme button:hover {
+        background: #256028;
+      }
+
+      #cropSelect {
+        width: 70%;
+        height: 40px;
+      }
+
+      .dashboard {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-items: flex-start;
+        margin-left: 20px;
+        margin-bottom: 30px;
+      }
+
+      .ai-assistant {
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .ai-assistant h2 {
+        font-size: 18px;
+        color: #2c662d;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .chat-box {
+        background: #f3f9f2;
+        padding: 10px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #d8e4d8;
+      }
+      .upload {
+        font-size: 12px;
+        margin-bottom: 8px;
+        color: #666;
+      }
+      .input-area {
+        display: flex;
+        gap: 6px;
+        margin-top: 5px;
+      }
+      .input-area input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+      .input-area button {
+        background: #2c662d;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .extra-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      .extra-buttons button {
+        flex: 1;
+        background: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .advice {
+        min-height: 450px;
+        overflow-y: auto;
+      }
+      .advice h2 {
+        font-size: 18px;
+        color: #2c662d;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .advice h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #444;
+      }
+      .alert,
+      .opportunity {
+        padding: 10px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+      .alert {
+        background: #fff5f5;
+        border: 1px solid #f1c0c0;
+      }
+      .opportunity {
+        background: #f3fff3;
+        border: 1px solid #b6e1b6;
+      }
+      .badge {
+        font-size: 11px;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 6px;
+      }
+      .urgent {
+        background: red;
+        color: white;
+      }
+      .success {
+        background: green;
+        color: white;
+      }
+      .advice button {
+        width: 100%;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .view-all {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      footer {
+        background: #2e7d32;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        font-size: 14px;
+        margin-top: auto;
+      }
+
+      @media (max-width: 768px) {
+        .dashboard {
+          grid-template-columns: 1fr;
+        }
+        .ai-assistant {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>🌿 Digital Krishi Officer</h1>
+        <small>Welcome, Guest</small>
+      </div>
+      <div>
+        <button onclick="malyalam()">🌐 മലയാളം</button>
+        <button>Logout</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <h2>Weather Forecast</h2>
+          <div id="weather" class="forecast">Loading weather...</div>
+        </div>
+        <div class="card">
+          <h2>Current Crops</h2>
+          <div>
+            <select id="cropSelect">
+              <option value="">🌱 Select crop to add</option>
+              <option>🌾 Rice</option>
+              <option>🥥 Coconut</option>
+              <option>🌿 Wheat</option>
+              <option>🌽 Maize</option>
+              <option>🍬 Sugarcane</option>
+            </select>
+            <button class="add-btn" onclick="addCrop()">+</button>
+          </div>
+
+          <div id="addedCrops" class="crop-list">No crops added yet</div>
+        </div>
+
+        <div class="card">
+          <h2>Government Schemes</h2>
+          <div class="scheme">
+            <b>PM-KISAN Scheme</b><span>Active</span>
+            <p>Direct income support to farmers</p>
+            <small>₹6,000/year • Deadline: 31-10-2025</small>
+            <button>View Details</button>
+          </div>
+          <div class="scheme">
+            <b>Kisan Credit Card</b><span>Active</span>
+            <p>Low-interest agricultural loans</p>
+            <small>Up to ₹3 Lakh • Deadline: 31-12-2025</small>
+            <button>View Details</button>
+          </div>
+          <button style="width: 100%; margin-top: 10px" class="add-btn">
+            View All Schemes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <!-- AI Assistant (long card) -->
+      <div class="card ai-assistant">
+        <div>
+          <h2>💬 AI Assistant</h2>
+          <div class="chat-box">
+            Hello! I’m your AI farming assistant. Ask me about pest control,
+            weather advice, crop care, or government schemes.
+          </div>
+        </div>
+        <div>
+          <div class="upload">Upload crop image for pest/disease detection</div>
+          <div class="input-area">
+            <input type="text" placeholder="Ask your farming question..." />
+            <button>➤</button>
+          </div>
+          <div class="extra-buttons">
+            <button>🎤 Voice Input</button>
+            <button>📷 Photo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personalized Advice (short card) -->
+      <div class="card advice">
+        <h2>💡 Personalized Advice</h2>
+        <h3>Today’s Advice</h3>
+
+        <div class="alert">
+          <strong>Weather Alert</strong>
+          <span class="badge urgent">Urgent</span>
+          <p>
+            Heavy rainfall expected in 2 days. Prepare drainage for rice fields.
+          </p>
+          <button>Check drainage ⬇</button>
+        </div>
+
+        <div class="opportunity">
+          <strong>Market Price Alert</strong>
+          <span class="badge success">Opportunity</span>
+          <p>Coconut prices are 15% higher this week. Good time to sell.</p>
+          <button>View markets ⬇</button>
+        </div>
+
+        <button class="view-all">View All Advice</button>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Digital Krishi Officer. All rights reserved.
+    </footer>
+
+    <script>
+      const apiKey = "YOUR_API_KEY";
+      const weatherDiv = document.getElementById("weather");
+      const addedCrops = document.getElementById("addedCrops");
+      let crops = [];
+
+      function renderCrops() {
+        if (crops.length === 0) {
+          addedCrops.innerHTML = "No crops added yet";
+          return;
+        }
+        addedCrops.innerHTML = crops.map((c) => `<span>${c}</span>`).join(" ");
+      }
+
+      function addCrop() {
+        const cropSelect = document.getElementById("cropSelect");
+        const selectedCrop = cropSelect.value;
+
+        if (selectedCrop && !crops.includes(selectedCrop)) {
+          crops.push(selectedCrop);
+          renderCrops();
+        }
+        cropSelect.value = "";
+      }
+
+      async function fetchWeather(lat, lon) {
+        try {
+          const res = await fetch(
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=metric&appid=${apiKey}`
+          );
+          const data = await res.json();
+          if (!data.daily) {
+            weatherDiv.innerHTML = "Weather data unavailable.";
+            return;
+          }
+          const forecast = data.daily.slice(0, 4);
+          weatherDiv.innerHTML = forecast
+            .map(
+              (f, i) => `
+          <div class="forecast-item">
+            <div><b>${i === 0 ? "Today" : "Day " + i}</b></div>
+            <img src="https://openweathermap.org/img/wn/${
+              f.weather[0].icon
+            }@2x.png" width="50"/>
+            <div style="font-size:20px;">${Math.round(f.temp.day)}°C</div>
+            <div>${f.weather[0].main}</div>
+            <small>💧${f.humidity}% • 🍃${Math.round(
+                f.wind_speed * 3.6
+              )} km/h</small>
+          </div>`
+            )
+            .join("");
+        } catch (e) {
+          weatherDiv.innerHTML = "Error fetching weather.";
+          console.error(e);
+        }
+      }
+
+      function initWeather() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (pos) => {
+              fetchWeather(pos.coords.latitude, pos.coords.longitude);
+            },
+            (err) => {
+              console.warn("Geolocation error", err);
+              fetchWeather(9.9312, 76.2673);
+            }
+          );
+        } else {
+          fetchWeather(9.9312, 76.2673);
+        }
+      }
+
+      renderCrops();
+      initWeather();
+
+      function malyalam() {
+        window.location.href = "malyalam.html";
+      }
+    </script>
+  </body>
+</html>
