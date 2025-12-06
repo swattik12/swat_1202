@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauarent website</title>
+    <style>
+        html{
+            box-sizing: border-boxl̥ol̥ōl̥ō;
+        }
+        body{
+            background:linear-gradient(135deg, #f5f5dc 0%, #faf0e6 100%);
+            font-family: Arial, sans-serif;
+            padding: 0;
+        }
+        
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+            background-color: aquamarine;
+            display: flex;
+           align-items: center;
+        }
+        div{
+            margin-left: 25px;
+            margin-right: 30px;
+        }
+        li{
+            padding: 0  20px;
+            margin-left: 200px;
+        }
+        li:first-child{
+            margin-left: 100px;
+        }
+        li a{
+            text-decoration: none;
+            padding-right: 10px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            color: black;
+        }
+        li a:hover{
+            background-color: bisque;
+            font-size: large;
+            padding: 5px;
+
+        }
+        button{
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            margin-left: 250px;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 7px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: darkgreen; /* Changes color on hover */
+            transform: scale(1.05); /* Slightly increases size */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+            } 
+        
+        .food{
+            display: flex;
+            align-items: right;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .food h1 {
+            font-size: 70px;
+            text-align: center;
+        }
+        .food h2 {
+            font-size: 50px;
+        }
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            text-decoration: underline;
+            font-size: large;
+        }
+        .food img {
+            height: 300px;
+            width: 400px;
+            display: block;
+        }
+        .food2{
+            display: flex;
+            /* align-items: left; */
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .food2 img{
+          height: 400px;
+          width: 400px;
+          display:block;
+        }
+        .text{
+            margin-right: 150px;
+            margin: 0px;
+        }
+        .food2 p{
+            font-size: 20px;
+        }
+        .food3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 20px;  
+        }
+        .food3 img{
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 120px;
+        
+        }
+        .food3 p{
+            text-align: center;
+            margin: 0;
+        }
+        .food h2{
+            text-align: center;
+        }
+        h4,p,h1{
+            margin: 50px;
+            padding: 0;
+        }
+        .footer {
+            background-color: aquamarine;
+            margin-top: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+    <link rel="website icon"  type="png" href="download.png">
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <marquee behavior="alternate" direction="left"><h1>50% OFF ON YOUR FIRST ORDER! ORDER NOW...</h1></marquee>
+
+    <div class="food">
+        <div>
+            <h1>TASTY FOOD</h1>
+            <h2>Try the best food of the week</h2>
+            <button id="#Menu">View Menu</button>
+        </div>
+        <div>
+            <img src="download(1).jpg" alt="food" height="400" width="500">
+        </div>
+    </div>
+     <hr>
+    <div class="food2">
+        <div>
+            <img src="download(2).jpg" alt="food">
+        </div>
+
+        <div class="text">
+            <h3 id="About">About us</h3>
+            <h1>We cook the best Tasty Food</h1>
+            <p>We cook the best food in the entire city,</p>
+            <p>with excellence customer service, the best</p>
+            <p>meals and the best price visit us</p>
+            <button>Explore History</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 id="Service"> Offering</h3>
+    <div class="food3">
+        <div>
+           <img src="fork.jpg" alt="fork">
+           <h2>Excellent Food</h2>
+           <p>We offer our clients excellent quality services for</p>
+            <p>many years,with the best and delicious food in the city.</p>
+           
+        </div>
+        <div>
+            <img src="pizza.jpg" alt="pizza">
+            <h2>Fast Food</h2>
+            <p>We offer our clients excellent quality services for many years, </p>
+            <p>with the best and delicious food in the city.
+            </p>
+        </div>
+        <div>
+            <img src="Screenshot 2025-02-05 224519.png" alt="delivery">
+            <h2>Delivery</h2>
+            <p>We offer our clients excellent quality services for many years,</p>
+            <p>with the best and delicious food in the city. </p>
+        </div>
+
+    </div>
+     
+    <h3>Special</h3>
+    <h2 id="Menu">Menu of the week</h2>
+    <div class="food4">
+        <div>
+           <center><img src="download (3).jpg" alt="foodmenu"></center>   
+
+        </div>
+    </div>
+    <hr>
+     
+    <div class="food5">
+        <h3>Lets Talk</h3>
+        <h1 id="Contact">Contact us</h1>
+        <p>If you want to reserve a table in our restaurant, contact us and we will 
+           attend you quickly, with our 24/7 chat service.</p>
+        <button>Contact Us</button>
+     </div>
+
+    <footer class="footer">
+        <p>Contact: 123-456-7890 | Email: info@restaurant.com</p>
+        <p>Follow us on social media for updates and special offers!</p>
+    </footer>
+    
+
+
+    
+</body>
+</html>
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista Restaurant</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f5dc 0%, #faf0e6 100%);
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Navigation */
+        nav {
+            background: linear-gradient(90deg, #7fffd4 0%, #40e0d0 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        li {
+            margin: 0 15px;
+        }
+        
+        li a {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            color: #2c3e50;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        li a:hover {
+            background-color: #fff;
+            color: #27ae60;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e67e22" width="1200" height="600"/><circle fill="%23f39c12" cx="200" cy="150" r="50"/><circle fill="%23d35400" cx="800" cy="400" r="80"/><rect fill="%23c0392b" x="400" y="200" width="400" height="200" rx="20"/></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            animation: slideIn 1s ease-out;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(45deg, #229954, #27ae60);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
+        }
+        
+        /* Offer Banner */
+        .offer-banner {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+        
+        /* Sections */
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .section h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            position: relative;
+        }
+        
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            color: #e67e22;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .restaurant-image {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Menu Section */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .menu-item {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .menu-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #e67e22, #f39c12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+        
+        .menu-item h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .menu-item p {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .contact-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        /* Footer */
+        .footer {
+            background: linear-gradient(90deg, #7fffd4 0%, #40e0d0 100%);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        .footer p {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            .section h2 {
+                font-size: 2.2rem;
+            }
+            
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            li {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#about">ℹ️ About</a></li>
+            <li><a href="#menu">🍽️ Menu</a></li>
+            <li><a href="#contact">📞 Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="offer-banner">
+        🎉 50% OFF ON YOUR FIRST ORDER! ORDER NOW! 🎉
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bella Vista Restaurant</h1>
+            <p>Experience Fine Dining at Its Best</p>
+            <button class="cta-button" onclick="scrollToSection('menu')">View Our Menu</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Welcome to Bella Vista Restaurant, where culinary excellence meets warm hospitality. For over 20 years, we've been serving our community with the finest ingredients and traditional recipes passed down through generations.</p>
+                <p>Our passionate chefs create each dish with love and attention to detail, ensuring every meal is a memorable experience. From our cozy atmosphere to our exceptional service, we strive to make every visit special.</p>
+            </div>
+            <div class="about-image">
+                <div class="restaurant-image">
+                    🏛️ Beautiful Restaurant Interior
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Our Signature Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-icon">🥩</div>
+                <h3>Grilled Ribeye Steak</h3>
+                <p>Premium cut ribeye grilled to perfection, served with roasted vegetables and garlic mashed potatoes</p>
+                <div class="price">$32.99</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">🦞</div>
+                <h3>Lobster Thermidor</h3>
+                <p>Fresh lobster in a rich, creamy sauce with herbs and cheese, baked to golden perfection</p>
+                <div class="price">$45.99</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">🍝</div>
+                <h3>Truffle Pasta</h3>
+                <p>Handmade pasta with black truffle, wild mushrooms, and parmesan in a creamy white wine sauce</p>
+                <div class="price">$28.99</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">🐟</div>
+                <h3>Pan-Seared Salmon</h3>
+                <p>Atlantic salmon with lemon herb butter, quinoa pilaf, and seasonal vegetables</p>
+                <div class="price">$26.99</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">🍰</div>
+                <h3>Chocolate Soufflé</h3>
+                <p>Decadent dark chocolate soufflé served warm with vanilla ice cream and berry compote</p>
+                <div class="price">$12.99</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-icon">🍷</div>
+                <h3>Wine Selection</h3>
+                <p>Curated selection of fine wines from around the world, perfectly paired with our dishes</p>
+                <div class="price">$8.99 - $89.99</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>123 Gourmet Street<br>Culinary District<br>Food City, FC 12345</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p>(555) 123-FOOD<br>Call for Reservations</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🕒</div>
+                <h3>Hours</h3>
+                <p>Mon-Thu: 5:00 PM - 10:00 PM<br>Fri-Sat: 5:00 PM - 11:00 PM<br>Sun: 4:00 PM - 9:00 PM</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
+                <p>info@bellavista.com<br>reservations@bellavista.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Bella Vista Restaurant. All rights reserved. | Follow us on social media for daily specials!</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Add smooth scrolling to navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'linear-gradient(90deg, rgba(127, 255, 212, 0.95) 0%, rgba(64, 224, 208, 0.95) 100%)';
+                nav.style.backdropFilter = 'blur(10px)';
+            } else {
+                nav.style.background = 'linear-gradient(90deg, #7fffd4 0%, #40e0d0 100%)';
+                nav.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97a6624a60c0c464',t:'MTc1NzA4MjIwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+ -->
