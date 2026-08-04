@@ -7,6 +7,7 @@
 | [0486-predict-the-winner](https://github.com/swattik12/swat_1202/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
 | [1406-stone-game-iii](https://github.com/swattik12/swat_1202/tree/master/1406-stone-game-iii) |
+| [1748-sum-of-unique-elements](https://github.com/swattik12/swat_1202/tree/master/1748-sum-of-unique-elements) |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
 ## Math
 |  |
@@ -58,9 +59,14 @@
 ## Hash Table
 |  |
 | ------- |
+| [1748-sum-of-unique-elements](https://github.com/swattik12/swat_1202/tree/master/1748-sum-of-unique-elements) |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
 ## Sorting
 |  |
 | ------- |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
+## Counting
+|  |
+| ------- |
+| [1748-sum-of-unique-elements](https://github.com/swattik12/swat_1202/tree/master/1748-sum-of-unique-elements) |
 <!---LeetCode Topics End-->
