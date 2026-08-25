@@ -14,6 +14,7 @@
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/swattik12/swat_1202/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/swattik12/swat_1202/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/swattik12/swat_1202/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/swattik12/swat_1202/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
 ## Math
 |  |
@@ -85,6 +86,7 @@
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/swattik12/swat_1202/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/swattik12/swat_1202/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/swattik12/swat_1202/tree/master/3471-find-the-largest-almost-missing-integer) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/swattik12/swat_1202/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
 ## Sorting
 |  |
