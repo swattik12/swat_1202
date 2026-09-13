@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0486-predict-the-winner](https://github.com/swattik12/swat_1202/tree/master/0486-predict-the-winner) |
+| [0835-image-overlap](https://github.com/swattik12/swat_1202/tree/master/0835-image-overlap) |
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/swattik12/swat_1202/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/swattik12/swat_1202/tree/master/1406-stone-game-iii) |
@@ -165,4 +166,8 @@
 | ------- |
 | [3483-unique-3-digit-even-numbers](https://github.com/swattik12/swat_1202/tree/master/3483-unique-3-digit-even-numbers) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/swattik12/swat_1202/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
+## Matrix
+|  |
+| ------- |
+| [0835-image-overlap](https://github.com/swattik12/swat_1202/tree/master/0835-image-overlap) |
 <!---LeetCode Topics End-->
