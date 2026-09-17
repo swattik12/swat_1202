@@ -9,6 +9,7 @@
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/swattik12/swat_1202/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/swattik12/swat_1202/tree/master/1406-stone-game-iii) |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1748-sum-of-unique-elements](https://github.com/swattik12/swat_1202/tree/master/1748-sum-of-unique-elements) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/swattik12/swat_1202/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/swattik12/swat_1202/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
@@ -43,6 +44,7 @@
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/swattik12/swat_1202/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/swattik12/swat_1202/tree/master/1406-stone-game-iii) |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1510-stone-game-iv](https://github.com/swattik12/swat_1202/tree/master/1510-stone-game-iv) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/swattik12/swat_1202/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Recursion
@@ -91,6 +93,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1748-sum-of-unique-elements](https://github.com/swattik12/swat_1202/tree/master/1748-sum-of-unique-elements) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/swattik12/swat_1202/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/swattik12/swat_1202/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
@@ -141,6 +144,7 @@
 ## Sliding Window
 |  |
 | ------- |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/swattik12/swat_1202/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/swattik12/swat_1202/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/swattik12/swat_1202/tree/master/3090-maximum-length-substring-with-two-occurrences) |
@@ -152,6 +156,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/swattik12/swat_1202/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 ## Combinatorics
 |  |
