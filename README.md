@@ -17,6 +17,7 @@
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/swattik12/swat_1202/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/swattik12/swat_1202/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3483-unique-3-digit-even-numbers](https://github.com/swattik12/swat_1202/tree/master/3483-unique-3-digit-even-numbers) |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/swattik12/swat_1202/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/swattik12/swat_1202/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/swattik12/swat_1202/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
@@ -35,6 +36,7 @@
 | [1510-stone-game-iv](https://github.com/swattik12/swat_1202/tree/master/1510-stone-game-iv) |
 | [1927-sum-game](https://github.com/swattik12/swat_1202/tree/master/1927-sum-game) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/swattik12/swat_1202/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
+| [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/swattik12/swat_1202/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3871-count-commas-in-range-ii](https://github.com/swattik12/swat_1202/tree/master/3871-count-commas-in-range-ii) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/swattik12/swat_1202/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Dynamic Programming
