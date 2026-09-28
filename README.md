@@ -126,6 +126,7 @@
 | ------- |
 | [0115-distinct-subsequences](https://github.com/swattik12/swat_1202/tree/master/0115-distinct-subsequences) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/swattik12/swat_1202/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1927-sum-game](https://github.com/swattik12/swat_1202/tree/master/1927-sum-game) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/swattik12/swat_1202/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/swattik12/swat_1202/tree/master/3090-maximum-length-substring-with-two-occurrences) |
@@ -186,4 +187,12 @@
 |  |
 | ------- |
 | [1401-circle-and-rectangle-overlapping](https://github.com/swattik12/swat_1202/tree/master/1401-circle-and-rectangle-overlapping) |
+## Stack
+|  |
+| ------- |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
