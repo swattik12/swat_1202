@@ -12,6 +12,7 @@
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1748-sum-of-unique-elements](https://github.com/swattik12/swat_1202/tree/master/1748-sum-of-unique-elements) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/swattik12/swat_1202/tree/master/2091-removing-minimum-and-maximum-from-array) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/swattik12/swat_1202/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/swattik12/swat_1202/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/swattik12/swat_1202/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
@@ -49,6 +50,7 @@
 | [1406-stone-game-iii](https://github.com/swattik12/swat_1202/tree/master/1406-stone-game-iii) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/swattik12/swat_1202/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1510-stone-game-iv](https://github.com/swattik12/swat_1202/tree/master/1510-stone-game-iv) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/swattik12/swat_1202/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Recursion
 |  |
@@ -183,6 +185,7 @@
 |  |
 | ------- |
 | [0835-image-overlap](https://github.com/swattik12/swat_1202/tree/master/0835-image-overlap) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 ## Geometry
 |  |
 | ------- |
@@ -195,4 +198,5 @@
 |  |
 | ------- |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 <!---LeetCode Topics End-->
