@@ -126,6 +126,7 @@
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
 | [0115-distinct-subsequences](https://github.com/swattik12/swat_1202/tree/master/0115-distinct-subsequences) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/swattik12/swat_1202/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
@@ -193,10 +194,12 @@
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Bracket Sequences
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 <!---LeetCode Topics End-->
