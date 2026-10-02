@@ -43,6 +43,7 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/swattik12/swat_1202/tree/master/0022-generate-parentheses) |
 | [0115-distinct-subsequences](https://github.com/swattik12/swat_1202/tree/master/0115-distinct-subsequences) |
 | [0486-predict-the-winner](https://github.com/swattik12/swat_1202/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
@@ -127,6 +128,7 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/swattik12/swat_1202/tree/master/0022-generate-parentheses) |
 | [0115-distinct-subsequences](https://github.com/swattik12/swat_1202/tree/master/0115-distinct-subsequences) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/swattik12/swat_1202/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
@@ -200,6 +202,11 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/swattik12/swat_1202/tree/master/0022-generate-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/swattik12/swat_1202/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
