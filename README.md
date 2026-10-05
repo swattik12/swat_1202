@@ -130,6 +130,7 @@
 | [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/swattik12/swat_1202/tree/master/0022-generate-parentheses) |
 | [0115-distinct-subsequences](https://github.com/swattik12/swat_1202/tree/master/0115-distinct-subsequences) |
+| [0856-score-of-parentheses](https://github.com/swattik12/swat_1202/tree/master/0856-score-of-parentheses) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/swattik12/swat_1202/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1927-sum-game](https://github.com/swattik12/swat_1202/tree/master/1927-sum-game) |
@@ -197,12 +198,14 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
+| [0856-score-of-parentheses](https://github.com/swattik12/swat_1202/tree/master/0856-score-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 ## Bracket Sequences
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/swattik12/swat_1202/tree/master/0022-generate-parentheses) |
+| [0856-score-of-parentheses](https://github.com/swattik12/swat_1202/tree/master/0856-score-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/swattik12/swat_1202/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 ## Backtracking
