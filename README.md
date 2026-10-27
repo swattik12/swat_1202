@@ -22,6 +22,7 @@
 | [3483-unique-3-digit-even-numbers](https://github.com/swattik12/swat_1202/tree/master/3483-unique-3-digit-even-numbers) |
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/swattik12/swat_1202/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/swattik12/swat_1202/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/swattik12/swat_1202/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/swattik12/swat_1202/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/swattik12/swat_1202/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3731-find-missing-elements](https://github.com/swattik12/swat_1202/tree/master/3731-find-missing-elements) |
@@ -203,6 +204,7 @@
 | ------- |
 | [0835-image-overlap](https://github.com/swattik12/swat_1202/tree/master/0835-image-overlap) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/swattik12/swat_1202/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/swattik12/swat_1202/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Geometry
 |  |
 | ------- |
@@ -232,8 +234,17 @@
 |  |
 | ------- |
 | [0301-remove-invalid-parentheses](https://github.com/swattik12/swat_1202/tree/master/0301-remove-invalid-parentheses) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/swattik12/swat_1202/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/swattik12/swat_1202/tree/master/2333-minimum-sum-of-squared-difference) |
+## Depth-First Search
+|  |
+| ------- |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/swattik12/swat_1202/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
+## Union-Find
+|  |
+| ------- |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/swattik12/swat_1202/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 <!---LeetCode Topics End-->
