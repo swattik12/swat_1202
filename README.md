@@ -4,6 +4,7 @@
 ## Array
 |  |
 | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/swattik12/swat_1202/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0486-predict-the-winner](https://github.com/swattik12/swat_1202/tree/master/0486-predict-the-winner) |
 | [0835-image-overlap](https://github.com/swattik12/swat_1202/tree/master/0835-image-overlap) |
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
@@ -36,6 +37,7 @@
 |  |
 | ------- |
 | [0292-nim-game](https://github.com/swattik12/swat_1202/tree/master/0292-nim-game) |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/swattik12/swat_1202/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0486-predict-the-winner](https://github.com/swattik12/swat_1202/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/swattik12/swat_1202/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/swattik12/swat_1202/tree/master/1140-stone-game-ii) |
